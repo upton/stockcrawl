@@ -29,14 +29,10 @@ class IndustryItem(scrapy.Item):
 class StockItem(scrapy.Item):
     code = scrapy.Field()  # 股票代码
     name = scrapy.Field()  # 股票名字
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
-#      = scrapy.Field() #
+    i_code = scrapy.Field()  # 行业code
+    trade = scrapy.Field()  #
+    pricechange = scrapy.Field()  #
+    changepercent = scrapy.Field()  #
+    ticktime = scrapy.Field()  #
+    pb = scrapy.Field()  #
+    turnoverratio = scrapy.Field()  #

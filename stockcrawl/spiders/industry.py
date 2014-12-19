@@ -24,7 +24,6 @@ class IndustrySpider(scrapy.Spider):
     def parse(self, response):
         body = response.body.decode('gb2312').replace(self.varStr, '')
         industrys = json.loads(body)
-        
         for kk in industrys:
             industry = industrys[kk].split(',')
             item = IndustryItem()
@@ -45,19 +44,28 @@ class IndustrySpider(scrapy.Spider):
             
             url = self.url_industry_stocks + item['code']
             yield scrapy.Request(url, callback=self.industryParse)
-            
-            # return item
+            yield item
 
 
     def industryParse(self, response):
         body = response.body.decode('gb2312')
         jsonStr = re.sub(r"(,?)([A-Za-z]+?)\s*?:", r"\1'\2':", body).replace("'", "\"");
         stocks = json.loads(jsonStr)
-        
+        print body
+        i_code = response.url.replace(self.url_industry_stocks, '')
         for stock in stocks:
             symbol = stock['symbol']
             url = self.url_stock % (int(time.time() * 1000), symbol)
             yield scrapy.Request(url, callback=self.stockParse)
+            item = StockItem()
+            
+            item['i_code'] = i_code
+            item['code'] = symbol
+            item['name'] = stock['name']
+            item['trade'] = stock['trade']
+            
+            
+            yield item
             
             
     def stockParse(self, response):
@@ -72,7 +80,7 @@ class IndustrySpider(scrapy.Spider):
         stockDetail = stockInfo[1].split(',')
         item['name'] = stockDetail[0]
         
-        return item
+        return [item]
         
         
 
