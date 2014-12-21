@@ -22,3 +22,429 @@ nmc:296838,
 turnoverratio:1.02363
 }]
 
+http://hq.sinajs.cn/rn=1418977926530&list=sz000783
+var hq_str_sz000783="长江证券,17.35,17.35,17.49,18.08,16.49,17.48,17.49,377711128,6602642858.40,352200,17.48,291416,17.47,276464,17.46,354389,17.45,180000,17.44,1251204,17.49,1725213,17.50,66800,17.51,52600,17.52,103576,17.53,2014-12-19,15:05:45,00";
+
+///////////
+symbol: {
+    key: "symbol",
+    title: "代码"
+},
+sym: {
+    key: "sym",
+    title: "代码"
+},
+name: {
+    key: "name",
+    title: "名称"
+},
+now: {
+    key: "now",
+    title: "&nbsp;最新价",
+    digit: 2,
+    cfg: 48
+},
+change: {
+    key: "change",
+    title: "涨跌额",
+    digit: 2,
+    cfg: 28
+},
+changeP: {
+    key: "changeP",
+    title: "涨跌幅",
+    digit: 2,
+    cfg: 28,
+    p: "$1%",
+    color: !0
+},
+open: {
+    key: "open",
+    title: "开盘价",
+    digit: 2,
+    cfg: 24
+},
+preClose: {
+    key: "preClose",
+    title: "昨收",
+    digit: 2,
+    cfg: 24
+},
+volume: {
+    key: "volume",
+    title: "成交量(手)",
+    digit: 0,
+    cfg: 16,
+    "万/亿": !0,
+    shift: -2
+},
+amount: {
+    key: "amount",
+    title: "成交额(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+turnover: {
+    key: "turnover",
+    title: "换手率",
+    digit: 2,
+    cfg: 24,
+    p: "$1%"
+},
+pe: {
+    key: "pe",
+    title: "市盈率",
+    digit: 2,
+    cfg: 24
+},
+pb: {
+    key: "pb",
+    title: "市净率",
+    digit: 2,
+    cfg: 24
+},
+high: {
+    key: "high",
+    title: "最高价",
+    digit: 2,
+    cfg: 24
+},
+low: {
+    key: "low",
+    title: "最低价",
+    digit: 2,
+    cfg: 24
+},
+buy: {
+    key: "buy",
+    title: "买入价",
+    digit: 2,
+    cfg: 24
+},
+sell: {
+    key: "sell",
+    title: "卖出价",
+    digit: 2,
+    cfg: 24
+},
+date: {
+    key: "date",
+    title: "日期"
+},
+time: {
+    key: "time",
+    title: "时间"
+},
+swing: {
+    key: "swing",
+    title: "振幅",
+    digit: 2,
+    cfg: 24,
+    p: "$1%"
+},
+eps: {
+    key: "eps",
+    title: "每股收益",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+profit4Season: {
+    key: "profit4Season",
+    title: "最近4季度每股收益",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+profitYear: {
+    key: "profitYear",
+    title: "今年以来每股收益",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+netAsset: {
+    key: "netAsset",
+    title: "每股净资产",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+averageVolume: {
+    key: "averageVolume",
+    title: "平均成交量",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+shares: {
+    key: "shares",
+    title: "总股本",
+    digit: 0,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+capital: {
+    key: "capital",
+    title: "流通股本",
+    digit: 0,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+cvs: {
+    key: "cvs",
+    title: "流通市值(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+totalShare: {
+    key: "totalShare",
+    title: "总市值(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+capitalA: {
+    key: "capitalA",
+    title: "流通A股",
+    digit: 0,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+capitalB: {
+    key: "capitalB",
+    title: "流通B股",
+    digit: 0,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+netProfit: {
+    key: "netProfit",
+    title: "最近年度净利润(亿元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+issuePrice: {
+    key: "issuePrice",
+    title: "发行价",
+    digit: 2,
+    cfg: 24,
+    s: 1
+},
+roe: {
+    key: "roe",
+    title: "净资产收益率",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+revenue: {
+    key: "revenue",
+    title: "主营业务收入(亿元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+changes_5: {
+    key: "changes_5",
+    title: "五日涨跌",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+changes_10: {
+    key: "changes_10",
+    title: "十日涨跌",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+changes_20: {
+    key: "changes_20",
+    title: "二十日涨跌",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+changes_30: {
+    key: "changes_30",
+    title: "三十日涨跌",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+changes_60: {
+    key: "changes_60",
+    title: "六十日涨跌",
+    digit: 2,
+    cfg: 24,
+    p: "$1%",
+    s: 1
+},
+netamount: {
+    key: "netamount",
+    title: "净流入(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+netInflowRate: {
+    key: "netInflowRate",
+    title: "净流入率",
+    digit: 2,
+    cfg: 24,
+    p: "$1%"
+},
+r0_in: {
+    key: "r0_in",
+    title: "主力净流入(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+r3_in: {
+    key: "r3_in",
+    title: "散户净流入(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0
+},
+r0_net_3: {
+    key: "r0_net_3",
+    title: "3日净流入(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+},
+r0_net_5: {
+    key: "r0_net_5",
+    title: "5日净流入(元)",
+    digit: 2,
+    cfg: 16,
+    "万/亿": !0,
+    s: 1
+}
+---------
+
+d = a.split(",");
+e = {};
+b && (e.sym = b);
+e.name = d[0];
+e.now = 1 * d[1];
+e.changeP = 1 * d[2];
+e.updateTime = d[3];
+e.change = 1 * d[4];
+e.open = 1 * d[5];
+e.high = 1 * d[6];
+e.low = 1 * d[7];
+e.high52 = 1 * d[8];
+e.low52 = 1 * d[9];
+e.volume = 1 * d[10];
+e.averageVolume = 1 * d[11];
+e.totalShare = 1 * d[12];
+e.eps = 1 * d[13];
+e.pe = 1 * d[14];
+e.pe = e.pe || "--";
+e.beta = 1 * d[16];
+e.dividend = 1 * d[17];
+e.dividend = e.dividend || "--";
+e.income = 1 * d[18];
+e.income = e.income || "--";
+e.shares = 1 * d[19];
+e.hourTradingPrice = 1 * d[21];
+e.hourTradingChangeP = 1 * d[22];
+e.hourTradingChange = 1 * d[23];
+e.hourTradingDateTime = d[24];
+f = d[24].split(" ");
+e.hourTradingDate = f[0] + " " + f[1];
+e.hourTradingTime = f[2] || "";
+e.dateTime = d[25];
+f = d[25].split(" ");
+e.date = f[0] + " " + f[1];
+e.time = f[2];
+e.preClose = 1 * d[26];
+e.hourTradingVolume = 1 * d[27];
+if (!e.open) {
+    e.open = "--";
+    e.high = "--";
+    e.low = "--"
+}
+if (! (e.now && "--" != e.open || e.change)) {
+    e.change = "--";
+    e.changeP = "--"
+}
+if (e.preClose) {
+    e.swing = 100 * ((e.high - e.low) / e.preClose);
+    e.swing = isNaN(e.swing) ? "--": e.swing
+} else {
+    e.preClose = "--";
+    e.swing = "--"
+}
+return e
+--------------------------------------------------
+d = a.split(",");
+e = {};
+if (b)
+    if (b.indexOf("hk") > -1) {
+        e.symbol = b;
+        e.sym = b.replace("hk", "")
+    } else {
+        e.symbol = "hk" + b;
+        e.sym = b
+    }
+e.enName = d[0];
+e.name = d[1];
+e.open = 1 * d[2];
+e.preClose = 1 * d[3];
+e.high = 1 * d[4];
+e.low = 1 * d[5];
+e.now = 1 * d[6];
+e.change = 1 * d[7];
+e.changeP = 1 * d[8];
+e.buy = 1 * d[9];
+e.sell = 1 * d[10];
+e.volume = 1 * d[12];
+e.amount = 1 * d[11];
+e.pe = 1 * d[13];
+e.pe = e.pe || "--";
+e.income = 1 * d[14];
+e.income = e.income || "--";
+e.high52 = 1 * d[15];
+e.low52 = 1 * d[16];
+e.date = d[17];
+e.time = d[18];
+if (!e.open) {
+    e.open = "--";
+    if (!e.now) {
+        e.high = "--";
+        e.low = "--"
+    }
+}
+if (!e.now) {
+    e.change = "--";
+    e.changeP = "--"
+}
+if (e.preClose) {
+    e.swing = 100 * ((e.high - e.low) / e.preClose);
+    e.swing = isNaN(e.swing) ? "--" : e.swing
+} else {
+    e.preClose = "--";
+    e.swing = "--"
+}
+return e
+///////////

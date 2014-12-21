@@ -1,2 +1,7 @@
-/__init__.pyc
-/settings.pyc
+/.settings/
+.DS_Store
+.project
+.pydevproject
+*.pyc
+/build/
+/project.egg-info/

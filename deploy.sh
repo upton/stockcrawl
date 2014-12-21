@@ -1,0 +1,1 @@
+scrapyd-deploy -p stockcrawl
