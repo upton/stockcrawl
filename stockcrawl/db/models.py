@@ -25,6 +25,15 @@ class Stock(Base):
     name = Column(String(16))  # 股票名字
     icode = Column(String(16))  # 行业code
     price = Column(Numeric(10, 3))  # 价格
+    totalShares = Column(String(16))  # 总股本：122.60亿
+    float_shares = Column(String(16))  # 流通股本：101.26亿
+    eps = Column(String(16))  # 每股收益：0.35
+    dividend = Column(String(16))  # 每股股息：0.20
+    net_assets = Column(String(16))  # 每股净资产：3.87
+    pe_lyr = Column(Numeric(12, 4))  # 市盈率LYR：40.88
+    pe_ttm = Column(Numeric(12, 4))  # 市盈率TTM：30.32
+    pb = Column(Numeric(12, 4))  # 市净率TTM：3.64
+    psr = Column(Numeric(12, 4))  # 市销率TTM：1.62
     create_time = Column(DateTime)  # 创建时间
     update_time = Column(DateTime)  # 更新时间
 

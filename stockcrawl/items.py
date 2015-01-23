@@ -24,4 +24,15 @@ class StockItem(scrapy.Item):
     code = scrapy.Field()  # 股票代码
     name = scrapy.Field()  # 股票名字
     icode = scrapy.Field()  # 行业code
-    price = scrapy.Field()  # 价格 
+    price = scrapy.Field()  # 价格
+    totalShares = scrapy.Field()  # 总股本：122.60亿
+    float_shares = scrapy.Field()  # 流通股本：101.26亿
+    eps = scrapy.Field()  # 每股收益：0.35
+    dividend = scrapy.Field()  # 每股股息：0.20
+    net_assets = scrapy.Field()  # 每股净资产：3.87
+    pe_lyr = scrapy.Field()  # 市盈率LYR：40.88
+    pe_ttm = scrapy.Field()  # 市盈率TTM：30.32
+    pb = scrapy.Field()  # 市净率TTM：3.64
+    psr = scrapy.Field()  # 市销率TTM：1.62
+    
+    
