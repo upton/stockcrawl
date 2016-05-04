@@ -28,20 +28,20 @@ class IndustrySpider(scrapy.Spider):
         industrys = json.loads(body)
         for kk in industrys:
             industry = industrys[kk].split(',')
-            item = IndustryItem()
-            
-            item['code'] = industry[0]
-            item['name'] = industry[1]
-            item['companys'] = industry[2]
-            item['price_avg'] = industry[3]
-            item['updn_price'] = industry[4]
-            item['updn_per'] = industry[5]
-            item['up_code'] = industry[12]
-            
-            url = self.url_industry_stocks + item['code']
-            yield scrapy.Request(url, callback=self.industryParse)
-            yield item
-
+            if len(industry[0]) > 0 :
+                item = IndustryItem()
+                
+                item['code'] = industry[0]
+                item['name'] = industry[1]
+                item['companys'] = industry[2]
+                item['price_avg'] = industry[3]
+                item['updn_price'] = industry[4]
+                item['updn_per'] = industry[5]
+                item['up_code'] = industry[12]
+                
+                url = self.url_industry_stocks + item['code']
+                yield scrapy.Request(url, callback=self.industryParse)
+                yield item
 
     def industryParse(self, response):
         body = response.body.decode(self.varEncode)
@@ -63,9 +63,9 @@ class IndustrySpider(scrapy.Spider):
             
     def stockRequest(self, url):
         time.sleep(3)
-        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'    
+        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'    
         headers = {'User-Agent' : user_agent,
-                   'Cookie':'xq_a_token=JxDkzB0RJmf8aSDaHul92x; xq_r_token=69oXi8d7F1GWLWqFPFyBKP; Hm_lvt_1db88642e346389874251b5a1eded6e3=1421851084; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1421909510; __utma=1.750920091.1421851084.1421905342.1421909445.3; __utmc=1; __utmz=1.1421851084.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+                   'Cookie':'s=5ru12a2oaf; xq_a_token=76dc94e5dabad0982db9673532f78492a47f0bb1; xqat=76dc94e5dabad0982db9673532f78492a47f0bb1; xq_r_token=b3fd6591326685236a0d6deaeab6d01108df2af8; xq_token_expire=Sat%20May%2021%202016%2015%3A22%3A13%20GMT%2B0800%20(CST); xq_is_login=1; u=2507362198; bid=60b8d8964a3b13c38655dc881d732ede_inh3uhfw; webp=1; Hm_lvt_1db88642e346389874251b5a1eded6e3=1461655304; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1462338105; __utmt=1; __utma=1.989006370.1453429847.1461655611.1462338105.7; __utmb=1.1.10.1462338105; __utmc=1; __utmz=1.1458712787.4.4.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)'
         }
           
         req = urllib2.Request(url, None, headers)    

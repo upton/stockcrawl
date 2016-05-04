@@ -15,7 +15,7 @@ NEWSPIDER_MODULE = 'stockcrawl.spiders'
 ITEM_PIPELINES = ['stockcrawl.pipelines.StockcrawlPipeline']
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'
 
 DEFAULT_REQUEST_HEADERS = {
                             'Accept':'application/json, text/javascript, */*; q=0.01',
